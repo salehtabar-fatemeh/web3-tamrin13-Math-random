@@ -8,10 +8,15 @@
 <body>
     <ul class="list"></ul>
     <button class="click-random">Create new random number</button>
-    
+
     <script>
          let list = document.querySelector(".list");
         const btnClick = document.querySelector(".click-random");
+
+        btnClick.addEventListener("click", ()=>{
+           list.innerHTML +=  `<li>${Math.round(Math.random()*100)}</li>`;
+        })
+        
 
     </script>
 
